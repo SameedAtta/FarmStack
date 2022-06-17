@@ -1,0 +1,29 @@
+.header-class{
+    background-color: blueviolet;
+    text-align: center;
+    border: 1px solid;
+
+}
+
+.col-md-5{
+    color: #fff;
+    margin-top: 2rem;
+    background-color: rgb(17, 31, 94);
+    padding: 100px;
+    height: 35rem !important;
+    width: 40%;
+    border-radius: 3rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 65%), 0 6px 20px 0 rgb(0 0 0 / 65%);
+    border: none;
+}
+
+
+.submit-button{
+    text-align: center;
+    margin-top: 1rem;
+    margin: 1rem;
+}
+
+.register-button{
+    background-color: rgb(14, 247, 83);
+}
