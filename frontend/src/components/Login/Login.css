@@ -7,7 +7,7 @@
 
 .col-md-4{
     color: #fff;
-    margin-top: 2rem;
+    margin-top: 4rem;
     background-color: rgb(17, 31, 94);
     padding: 100px;
     height: 25rem;
@@ -15,6 +15,7 @@
     border-radius: 3rem;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 65%), 0 6px 20px 0 rgb(0 0 0 / 65%);
     border: none;
+    text-align: center;
 }
 
 .submit-button{
@@ -51,4 +52,9 @@
     /* margin-left: 11px; */
     padding-right: 27rem;
     color: #fff;
+}
+
+.container{
+    text-align: -webkit-center;
+    
 }

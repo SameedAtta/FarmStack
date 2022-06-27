@@ -22,7 +22,6 @@ oauth.register(
     }
 )
 
-
 @app.get('/')
 async def homepage(request: Request):
     user = request.session.get('user')

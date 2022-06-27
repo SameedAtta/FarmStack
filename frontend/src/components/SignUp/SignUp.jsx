@@ -11,10 +11,12 @@ const SignUp = () => {
   const[password,setPassword] = useState("")
   let navigate = useNavigate();
   const successfullRegistration = () => {
-     if (name && email && confirmEmail && password) {
-       navigate("/");
-     } 
-   };
+    if (name && email && confirmEmail && password) {
+      navigate("/Home");
+    } 
+  };
+
+  
   return (
     <div>
       <div className="header-class">
@@ -67,14 +69,15 @@ const SignUp = () => {
                   }}
                   required
                 />
+                <div></div>
                 <div className="submit-button">
 
-                    <button onClick={()=>{navigate("/");}}type="submit" className="register-button">
+                    <button onClick={()=>{navigate("/");}} type="submit" className="register-button">
                       Login
                     </button>
                     <button
+                    onClick={successfullRegistration}
                       type="submit"
-                      onClick={successfullRegistration}
                       className="register-button"
                     >
                       Register

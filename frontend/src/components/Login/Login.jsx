@@ -1,11 +1,13 @@
 import React from "react";
 import "./Login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+//import GoogleButton from 'react-google-button';
 import { useNavigate } from "react-router-dom";
 // import {HiMail} from "react-icons/hi"
 // import {VscKey} from "react-icons/vsc"
 //import Swal from "sweetalert2";
 import { useState } from "react";
+import {FcGoogle} from "react-icons/fc";
 
 const Login = () => {
   let navigate = useNavigate();
@@ -24,9 +26,7 @@ const Login = () => {
       <div>
         <h1 className="header-class">Welcome to My First Website</h1>
       </div>
-      <div className="App">
         <div className="container">
-          <div className="row d-flex justify-content-center">
             <div className="col-md-4">
               <form id="loginform">
                 <label className="form-label">Email address</label>
@@ -62,11 +62,17 @@ const Login = () => {
                     navigate("/SignUp");
                   }}
                   className="register-button">SignUp</button> 
+                  
                 </div>
+                {/* <GoogleButton
+                  onClick={() => { alert('Google button clicked') }}
+                  /> */}
+                  <FcGoogle size={40}  className="google-icon"
+                      // onClick={() => { alert('Google button clicked') }}
+                      onClick={() => { alert('Google button clicked') }}
+                  />
               </form>
             </div>
-          </div>
-        </div>
       </div>
     </section>
   );
